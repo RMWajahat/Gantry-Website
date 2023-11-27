@@ -1,0 +1,12 @@
+/* Type.css */
+
+.Typewriter__wrapper {
+  background-color: #41ae3d; /* Initial background color while typing */
+}
+
+.Typewriter__cursor {
+  display: inline-block; /* Make the cursor an inline-block element */
+  width: 8px; /* Set the width of the cursor */
+  background-color: black; /* Set the color of the cursor */
+  margin-left: 5px; /* Optional: Add margin for spacing between text and cursor */
+}

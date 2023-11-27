@@ -1,0 +1,46 @@
+:root{
+    --tone:#ce95f2;
+    --bar:#e2bcfa;
+}
+
+.uphill{
+    width: 100vw;
+    height:0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    animation: vanish 1s linear;
+}
+
+
+.boxes{
+    animation: popupbar 1.3s linear;
+    width: calc((100/8)*1vw);
+    height: 100vh;
+    background: var(--bar);
+    margin-top: calc(1vw*var(--py));
+}
+
+
+@keyframes popupbar{
+    0%{
+        transform: translateY(100vh);
+    }
+    100%{
+        transform: translateY(-1000px);
+    }
+}
+
+@keyframes vanish {
+    
+    0%{
+        height: 100vh;
+    }
+    100%{
+        height: 0vh;
+    }
+}
+
+

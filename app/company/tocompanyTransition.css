@@ -1,0 +1,126 @@
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: 0;
+}
+
+body{
+    height: 100vh;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+
+}
+
+
+.full_bar_right{
+    height: 100vh;
+    width:100vw;
+    overflow: hidden;
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+    transform:translateX(110vw);
+    animation: outtheplane 1s linear;
+    z-index: 10;
+    
+}
+.bar{
+    background-image: url("../../public/HomeImages/tocompany.png");
+    background-size: 100vw;
+    width: 0;
+    height: 100vh;
+    background-position: left;
+    animation: tilt 350ms linear ;
+
+}
+
+.bar:nth-child(1){
+    background-position-x: 0vw;
+    
+}
+.bar:nth-child(2){
+    background-position-x: -5vw;
+}
+.bar:nth-child(3){
+    background-position-x: -10vw;
+}
+.bar:nth-child(4){
+    background-position-x: -15vw;
+}
+.bar:nth-child(5){
+    background-position-x: -20vw;
+}
+.bar:nth-child(6){
+    background-position-x: -25vw;
+}
+.bar:nth-child(7){
+    background-position-x: -30vw;
+}
+.bar:nth-child(8){
+    background-position-x: -35vw;
+}
+.bar:nth-child(9){
+    background-position-x: -40vw;
+}
+.bar:nth-child(10){
+    background-position-x: -45vw;
+}
+.bar:nth-child(11){
+    background-position-x: -50vw;
+}
+.bar:nth-child(12){
+    background-position-x: -55vw;
+}
+.bar:nth-child(13){
+    background-position-x: -60vw;
+}
+.bar:nth-child(14){
+    background-position-x: -65vw;
+}
+.bar:nth-child(15){
+    background-position-x: -70vw;
+}
+.bar:nth-child(16){
+    background-position-x: -75vw;
+}
+.bar:nth-child(17){
+    background-position-x: -80vw;
+}
+.bar:nth-child(18){
+    background-position-x: -85vw;
+}
+.bar:nth-child(19){
+    background-position-x: -90vw;
+}
+.bar:nth-child(20){
+    background-position-x: -95vw;
+}
+
+@keyframes tilt{
+    0%{
+        transform:translateX(0px);
+        width: 5vw;
+        opacity: 1;
+    }
+    100%{
+        transform:translateX(100px);
+        width: 0;
+        opacity: calc(var(--opa));
+    }
+}
+
+
+@keyframes outtheplane {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(100vw);
+    }
+}
