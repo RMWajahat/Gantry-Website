@@ -13,7 +13,7 @@ import Footer from "@/components/Footer";
 import Circular from "@/components/home/Circular";
 import SemiCircle from "@/components/home/SemiCircle";
 
-import HomeTransition from "../components/hometransition/homeTransition";
+import HomeTransition from "@/components/hometransition/homeTransition";
 
 
 export default function Home() {

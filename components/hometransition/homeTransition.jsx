@@ -1,6 +1,6 @@
 "use client";
 
-import "./homeTransition.css";
+import "./homeTransition.css"
 
 const HomeTransition = () => {
 
