@@ -1,6 +1,7 @@
 "use client";
+import React from 'react';
 
-import "./homeTransition.css"
+import "../hometransition/hometransition.css";
 
 const HomeTransition = () => {
 
